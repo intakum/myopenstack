@@ -2,7 +2,7 @@
 ```
 for i in ROOT_DBPASS ADMIN_PASS CINDER_DBPASS CINDER_PASS DASH_DBPASS  \
 DEMO_PASS GLANCE_DBPASS GLANCE_PASS KEYSTONE_DBPASS NEUTRON_DBPASS NEUTRON_PASS \ 
-NOVA_DBPASS NOVA_PASS  RABBIT_PASS; do echo "export $i=$(openssl rand -hex 10)" >> password.txt ;done
+NOVA_DBPASS NOVA_PASS  RABBIT_PASS METADATA_SECRET; do echo "export $i=$(openssl rand -hex 10)" >> password.txt ;done
 ```
 
 ```
